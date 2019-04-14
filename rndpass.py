@@ -4,7 +4,6 @@ from random import *
 karakter = "abcdefghijklmnoprstuvyzwxABCDEFGHIJKLMNOPQRSTUVWXYZ"
 sayi = "0123456789"
 ozel = "'!#@.,$"
-hepsi = "."
 
 answer = input("Parolanın içerisinde sayı olsun mu? [E/H]")
 if answer == "E":
