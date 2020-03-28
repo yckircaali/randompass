@@ -6,37 +6,37 @@ number = "0123456789"
 custom = "'! # @., $"
 
 answer = input ("Is there a number in the password? [Y / N]")
-if answer == "E":
+if answer == "Y":
     print("Number added.")
-elif answer == "H":
+elif answer == "N":
     print("No numbers added.")
 
 answer2 = input ("Is there a letter in the password? [Y / N]")
-if answer2 == "E":
+if answer2 == "Y":
     print("Letter added.")
-elif answer2 == "H":
+elif answer2 == "N":
     print("No letters added.")
 
-answer3 = input ("Is there any special character in the password? [E / H]")
-if answer3 == "E":
+answer3 = input ("Is there any special character in the password? [Y / N]")
+if answer3 == "Y":
     print("Special character added.")
-elif answer3 == "H":
+elif answer3 == "N":
     print("No special characters added.")
 
 if answer == "Y" and answer2 == "Y" and answer3 == "Y":
-    all = number + character + special
+    all = number + character + custom
 if answer == "Y" and answer2 == "Y" and answer3 == "N":
     all = number + character
 if answer == "Y" and answer2 == "N" and answer3 == "Y":
-    all = number + special
+    all = number + custom
 if answer == "Y" and answer2 == "N" and answer3 == "N":
     all = number
 if answer == "N" and answer2 == "Y" and answer3 == "Y":
-    all = character + special
+    all = character + custom
 if answer == "N" and answer2 == "Y" and answer3 == "N":
     all = character
 if answer == "N" and answer2 == "N" and answer3 == "Y":
-    all = special
+    all = custom
 if answer == "N" and answer2 == "N" and answer3 == "N":
     print ("Please select an entry.")
     sys.exit ()
