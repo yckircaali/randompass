@@ -3,7 +3,7 @@ from random import *
 
 character = "abcdefghijklmnoprstuvyzwxABCDEFGHIJKLMNOPQRSTUVWXYZ"
 number = "0123456789"
-custom = "' !#@.,$-_:;"
+custom = "'!#@.,$-_:;"
 
 answer = input ("Is there a number in the password? [Y / N]")
 if answer in ('y','Y'):
