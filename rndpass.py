@@ -23,21 +23,21 @@ if answer3 in ('y','Y'):
 elif answer3 in ('n','N'):
     print("No special characters added.")
 
-if answer in ('y','Y') and answer2 in ('y','Y') and answer3 in ('y','Y'):
+if answer and answer2 and answer3 in ('y','Y'):
     all = number + character + custom
-if answer in ('y','Y') and answer2 in ('y','Y') and answer3 in ('n','N'):
+if answer and answer2 in ('y','Y') and answer3 in ('n','N'):
     all = number + character
-if answer in ('y','Y') and answer2 in ('n','N') and answer3 in ('y','Y'):
+if answer and answer3 in ('y','Y') and answer2 in ('n','N'):
     all = number + custom
-if answer in ('y','Y') and answer2 in ('n','N') and answer3 in ('n','N'):
+if answer in ('y','Y') and answer2 and answer3 in ('n','N'):
     all = number
-if answer in ('n','N') and answer2 in ('y','Y') and answer3 in ('y','Y'):
+if answer in ('n','N') and answer2 and answer3 in ('y','Y'):
     all = character + custom
-if answer in ('n','N') and answer2 in ('y','Y') and answer3 in ('n','N'):
+if answer and answer3 in ('n','N') and answer2 in ('y','Y'):
     all = character
-if answer in ('n','N') and answer2 in ('n','N') and answer3 in ('y','Y'):
+if answer and answer2 in ('n','N') and answer3 in ('y','Y'):
     all = custom
-if answer in ('n','N') and answer2 in ('n','N') and answer3 in ('n','N'):
+if answer and answer2 and answer3 in ('n','N'):
     print ("Please select an entry.")
     sys.exit ()
 min = int (input ("Min:"))
